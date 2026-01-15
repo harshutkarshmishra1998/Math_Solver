@@ -13,7 +13,7 @@ from langchain.callbacks import StreamlitCallbackHandler
 st.set_page_config(page_title="Text To MAth Problem Solver And Data Serach Assistant",page_icon="🧮")
 st.title("Text To Math Problem Solver Uing Google Gemma 2")
 
-llm=ChatGroq(model="llama-3.1-8b-instant", stop_sequences=["\n"], temperature=0)
+llm=ChatGroq(model="llama-3.1-8b-instant", stop_sequences=[],temperature=0)
 
 prompt="""
 Your a agent tasked for solving users mathemtical question. Logically arrive at the solution and provide a detailed explanation
